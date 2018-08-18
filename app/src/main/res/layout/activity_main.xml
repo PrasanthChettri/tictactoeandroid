@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="13dp"
+    tools:context="com.example.prasanthchettri.tictactoe.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A9A9"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:text="SELECT SECOND PLAYER AS"
+        android:layout_above="@+id/choosePlayer"/>
+
+    <LinearLayout
+        android:id="@+id/choosePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/COMPUTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPUTER"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/PLAYER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAYER"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>
